@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jayshree Ubarhande — Java Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#">JU</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a class="btn" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Jayshree Ubarhande</h1>
+      <p class="subtitle">Java & Spring Boot Developer • React • SQL</p>
+      <p class="lede">
+        Motivated Java developer skilled in Spring Boot, REST APIs, SQL, React, and unit testing.
+        I enjoy building clean, maintainable software and collaborating in agile teams.
+      </p>
+      <div class="cta">
+        <a class="btn" href="https://www.linkedin.com/in/jaya-ubarhande/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/Jayshree009" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="./assets/Jayshree_Ubarhande_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </div>
+    <img class="hero-img" src="assets/portrait.jpg" alt="Jayshree Ubarhande portrait (optional)">
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <article class="card">
+      <div class="card-body">
+        <h3>Weather Dashboard API Client</h3>
+        <p>Java console app that fetches real-time weather via OpenWeatherMap. Uses Java HttpClient, Jackson, robust error handling, unit tests, and unit/°C-°F toggle.</p>
+        <div class="meta">
+          <span>Java</span><span>Spring-style structure</span><span>HTTPClient</span><span>Jackson</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-body">
+        <h3>Chesterfield Academy — Preschool/Daycare Website</h3>
+        <p>Responsive React site with routing, reusable components, props, Bootstrap styling, and Netlify deploy.</p>
+        <div class="meta">
+          <span>React</span><span>Vite</span><span>Bootstrap</span>
+        </div>
+        <div class="links">
+          <a href="https://monumental-piroshki-4a1b30.netlify.app/" target="_blank" rel="noopener">Live demo</a>
+          <a href="https://github.com/Jayshree009/Unit_1_Project-Jayshree-Ubarhande" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="tags">
+      <li>Java</li><li>Spring Boot</li><li>REST APIs</li><li>JUnit</li><li>JavaScript</li>
+      <li>React</li><li>HTML/CSS</li><li>SQL</li><li>MySQL</li><li>PostgreSQL</li>
+      <li>OOP</li><li>MVC</li><li>Error Handling</li><li>API Testing (Postman)</li>
+      <li>Git & GitHub</li><li>Agile/Scrum</li><li>Security Best Practices</li><li>AI Fundamentals</li>
+    </ul>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+
+    <article class="xp">
+      <h3>SQL / ETL Developer — PNC Financial Services</h3>
+      <p class="when">May 2024 – Nov 2024</p>
+      <ul>
+        <li>Created & optimized SQL queries for analysis and reporting; resolved data mismatches.</li>
+        <li>Supported ETL pipelines integrating multiple data sources and improved performance.</li>
+      </ul>
+    </article>
+
+    <article class="xp">
+      <h3>Banker — Bank of Baroda</h3>
+      <p class="when">2011 – 2016</p>
+      <ul>
+        <li>Managed customer accounts, transactions, and compliance processes.</li>
+        <li>Partnered across teams to improve operational efficiency and service quality.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <ul class="edu">
+      <li><strong>LaunchCode</strong> — Full-Stack Software Development (In Progress)</li>
+      <li><strong>MBA</strong> — Webster University (Expected 2026)</li>
+      <li><strong>B.S. Computer Science</strong> — Dr. BAMU, Maharashtra, India</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:jaya.kolte21@gmail.com">jaya.kolte21@gmail.com</a> • Phone: <a href="tel:+13146801885">314-680-1885</a> • St. Louis, MO</p>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="y"></span> Jayshree Ubarhande</p>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
