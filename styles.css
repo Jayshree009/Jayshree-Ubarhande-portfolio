@@ -1,0 +1,36 @@
+:root{
+  --bg:#0b1220; --panel:#111a2b; --ink:#e9eef9; --muted:#9fb0cc;
+  --accent:#7cc4ff; --accent-ink:#04121e; --chip:#1b2a44;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{opacity:.9}
+.nav{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);display:flex;gap:16px;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:1px solid #1c2942;background:linear-gradient(180deg,rgba(13,20,34,.7),rgba(13,20,34,.3))}
+.brand{font-weight:800;background:var(--accent);color:var(--accent-ink);padding:6px 10px;border-radius:10px}
+.nav nav a{margin:0 10px;color:var(--muted)}
+.nav .btn{margin-left:10px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;max-width:1100px;margin:48px auto;padding:0 20px}
+.hero-inner h1{font-size:42px;margin:0 0 8px}
+.subtitle{color:var(--muted);margin:0 0 14px}
+.lede{max-width:60ch;line-height:1.6}
+.hero-img{width:100%;border-radius:16px;border:1px solid #223456;display:block}
+.cta{margin-top:18px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:10px 14px;border-radius:10px;font-weight:600}
+.btn.ghost{background:transparent;border:1px solid #294368;color:var(--ink)}
+.section{max-width:1100px;margin:54px auto;padding:0 20px}
+.section h2{margin:0 0 18px}
+.card{background:var(--panel);border:1px solid #203357;border-radius:16px;margin:14px 0}
+.card-body{padding:18px}
+.meta span{display:inline-block;background:var(--chip);color:var(--muted);padding:4px 8px;border-radius:999px;margin:6px 6px 0 0;font-size:12px}
+.links a{margin-right:14px}
+.tags{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.tags li{background:var(--chip);color:var(--ink);padding:6px 10px;border-radius:999px;border:1px solid #203357}
+.xp{padding:18px;background:var(--panel);border:1px solid #203357;border-radius:16px;margin:12px 0}
+.when{color:var(--muted);margin-top:-4px}
+.edu{list-style:disc;padding-left:20px;color:var(--ink)}
+.footer{border-top:1px solid #1f2d49;margin-top:64px;padding:22px 20px;color:var(--muted);text-align:center}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-img{order:-1}
+}
